@@ -1,0 +1,46 @@
+{
+  "name": "auction-app-backend",
+  "version": "1.0.0",
+  "description": "auction app backend",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alpgokcek/auction-app.git"
+  },
+  "keywords": [
+    "firebase",
+    "nodejs",
+    "socket",
+    "backend"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alpgokcek/auction-app/issues"
+  },
+  "homepage": "https://github.com/alpgokcek/auction-app#readme",
+  "dependencies": {
+    "@types/node-cron": "^2.0.3",
+    "@types/nodemailer": "^6.4.0",
+    "@types/socket.io": "^2.1.12",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.4.1",
+    "http": "0.0.1-security",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.6",
+    "socket.io": "^3.0.4",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.2"
+  }
+}

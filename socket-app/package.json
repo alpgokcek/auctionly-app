@@ -1,0 +1,20 @@
+{
+  "name": "auctionly-socket-app",
+  "version": "1.0.0",
+  "description": "Socket.io application for our online auction system",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server",
+    "start": "nodemon server"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

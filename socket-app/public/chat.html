@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Auction</title>
+  </head>
+  <body>
+    <div class="bid-container">
+      <header class="bid-header">
+        <h1 id="room-header"></h1>
+      </header>
+      <main class="bid-main">
+        <div class="bid-sidebar">
+          <h3><i class="fas fa-users"></i> Users</h3>
+          <div style="margin-top: 1rem">
+            <ul id="users"></ul>
+          </div>
+        </div>
+        <div class="old-bids"></div>
+        <div class="bid-sidebar">
+          <h3><i class="fas fa-history"></i> Product Details</h3>
+          <div style="margin-top: 1rem">
+            <b>Product Name:</b>
+            <p id="product-name"></p>
+          </div>
+          <div style="margin-top: 1rem">
+            <b>Current Price:</b>
+            <p id="product-current-price"></p>
+          </div>
+        </div>
+      </main>
+      <div class="bid-form-container">
+        <form id="bid-form">
+          <input
+            id="bid"
+            min="0"
+            type="number"
+            placeholder="Enter Bid"
+            required
+            autocomplete="off"
+            style="
+              border-radius: 10px;
+              height: 2.7rem;
+              width: 12rem;
+              padding: 10px;
+            "
+          />
+          <button class="btn">
+            <i class="fas fa-paper-plane"></i> Send Offer
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
